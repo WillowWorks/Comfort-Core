@@ -1,4 +1,4 @@
-package net.willowworks.comfortcore;
+package net.willowworks.comfortcore.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -71,36 +71,36 @@ public class TallTorchBlock extends HorizontalDirectionalBlock {
                 level.addParticle(ParticleTypes.FLAME, j, k, l, 0, 0, 0);
             }
             case SOUTH -> {
-                double g = (double) blockPos.getX() + 0.25;
-                double h = (double) blockPos.getY() + 0.45;
-                double i = (double) blockPos.getZ() + 0.5;
-                double j = (double) blockPos.getX() + 0.75;
-                double k = (double) blockPos.getY() + 0.7;
-                double l = (double) blockPos.getZ() + 0.5;
+                double g = blockPos.getX() + 0.25;
+                double h = blockPos.getY() + 0.45;
+                double i = blockPos.getZ() + 0.5;
+                double j = blockPos.getX() + 0.75;
+                double k = blockPos.getY() + 0.7;
+                double l = blockPos.getZ() + 0.5;
                 level.addParticle(ParticleTypes.SMOKE, g, h, i, 0, 0, 0);
                 level.addParticle(ParticleTypes.FLAME, g, h, i, 0, 0, 0);
                 level.addParticle(ParticleTypes.SMOKE, j, k, l, 0, 0, 0);
                 level.addParticle(ParticleTypes.FLAME, j, k, l, 0, 0, 0);
             }
             case WEST -> {
-                double g = (double) blockPos.getX() + 0.5;
-                double h = (double) blockPos.getY() + 0.7;
-                double i = (double) blockPos.getZ() + 0.75;
-                double j = (double) blockPos.getX() + 0.5;
-                double k = (double) blockPos.getY() + 0.45;
-                double l = (double) blockPos.getZ() + 0.25;
+                double g = blockPos.getX() + 0.5;
+                double h = blockPos.getY() + 0.7;
+                double i = blockPos.getZ() + 0.75;
+                double j = blockPos.getX() + 0.5;
+                double k = blockPos.getY() + 0.45;
+                double l = blockPos.getZ() + 0.25;
                 level.addParticle(ParticleTypes.SMOKE, g, h, i, 0, 0, 0);
                 level.addParticle(ParticleTypes.FLAME, g, h, i, 0, 0, 0);
                 level.addParticle(ParticleTypes.SMOKE, j, k, l, 0, 0, 0);
                 level.addParticle(ParticleTypes.FLAME, j, k, l, 0, 0, 0);
             }
             case NORTH -> {
-                double g = (double) blockPos.getX() + 0.25;
-                double h = (double) blockPos.getY() + 0.7;
-                double i = (double) blockPos.getZ() + 0.5;
-                double j = (double) blockPos.getX() + 0.75;
-                double k = (double) blockPos.getY() + 0.45;
-                double l = (double) blockPos.getZ() + 0.5;
+                double g = blockPos.getX() + 0.25;
+                double h = blockPos.getY() + 0.7;
+                double i = blockPos.getZ() + 0.5;
+                double j = blockPos.getX() + 0.75;
+                double k = blockPos.getY() + 0.45;
+                double l = blockPos.getZ() + 0.5;
                 level.addParticle(ParticleTypes.SMOKE, g, h, i, 0, 0, 0);
                 level.addParticle(ParticleTypes.FLAME, g, h, i, 0, 0, 0);
                 level.addParticle(ParticleTypes.SMOKE, j, k, l, 0, 0, 0);
