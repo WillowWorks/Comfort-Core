@@ -2,12 +2,14 @@ package com.willowworks.comfortcore.platform;
 
 import com.willowworks.comfortcore.Constants;
 import com.willowworks.comfortcore.platform.services.IPlatformHelper;
+import com.willowworks.comfortcore.platform.services.IRegistryHelper;
 
 import java.util.ServiceLoader;
 
 public class Services {
 
     public static final IPlatformHelper PLATFORM = load(IPlatformHelper.class);
+    public static final IRegistryHelper REGISTRY = load(IRegistryHelper.class);
 
     public static <T> T load(Class<T> clazz) {
 
