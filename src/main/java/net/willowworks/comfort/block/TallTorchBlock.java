@@ -1,4 +1,4 @@
-package net.willowworks.comfortcore.block;
+package net.willowworks.comfort.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

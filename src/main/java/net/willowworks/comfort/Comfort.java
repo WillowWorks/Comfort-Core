@@ -1,4 +1,4 @@
-package net.willowworks.comfortcore;
+package net.willowworks.comfort;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -10,13 +10,13 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("comfortcore")
-public class ComfortCore
+@Mod("comfort")
+public class Comfort
 {
-    public static final String MOD_ID = "comfortcore";
-    private static final Logger LOGGER = LogManager.getLogger("ComfortCore");
+    public static final String MOD_ID = "comfort";
+    private static final Logger LOGGER = LogManager.getLogger("Comfort");
 
-    public ComfortCore() {
+    public Comfort() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         eventBus.addListener(this::onCommonSetupEvent);
         eventBus.addListener(this::onClientSetupEvent);
